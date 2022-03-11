@@ -1,7 +1,8 @@
-package Giris;
+
+package kutu;
 import java.util.Scanner;
 
-public class Baslangic {
+public class java1 {
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
 
@@ -9,17 +10,42 @@ public class Baslangic {
         System.out.println("Fiyatı Giriniz:");
         f = input.nextDouble();
 
-
-
-
         kf = f *18/100;
         sf = f+kf;
         bf = f;
         kdvo=0.18;
-        System.out.println("Kdv'siz Fiyatı:"+bf);
-        System.out.println("Kdv'li Fiyatı:"+ sf);
-        System.out.println("Kdv Fiyatı:"+kf);
-        System.out.println("Kdv oranı:"+kdvo);
-        
+        //KDV %18
+
+        double KF,SF,BF,KDVO;
+        KF= f *8/100;
+        SF= f+KF;
+        BF= f;
+        KDVO=0.8;
+
+        String DEMP="Kdv'li Fiyatı:"+SF;
+        String DEM= "\nKdv'siz Fiyatı:"+BF;
+        String DEM2= "\nKdv Fiyatı:"+KF;
+        String DEM3= "\nKdv oranı:"+KDVO;
+
+        String demp= "Kdv'li Fiyatı:"+ sf;
+        String dem= "\nKdv'siz Fiyatı:"+bf;
+        String dem2= "\nKdv Fiyatı:"+kf;
+        String dem3= "\nKdv oranı:"+kdvo;
+
+
+
+        boolean cu= f<1000 ;
+        String kosul1= cu ? ""+demp+dem+dem2+dem3 : ""+DEMP+DEM+DEM2+DEM3;
+
+        System.out.println(kosul1);
+
+
+
+
+
+
+
+
     }
 }
+
