@@ -1,3 +1,4 @@
+
 package kutu;
 import java.util.Scanner;
 
@@ -11,3 +12,13 @@ public class java1 {
         boolean kontrol= km<20;
         String str= (kontrol) ? "Ücret 20TL":""+km;
         System.out.println("ücret: "+str);
+
+
+
+
+
+
+
+
+    }
+}
