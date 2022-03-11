@@ -1,0 +1,45 @@
+package Giris;
+import java.util.Scanner;
+
+public class Baslangic {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        int mat,tr,ing,bdn,trh,fzk;
+
+        System.out.println("Matematik notunuzu giriniz");
+        mat = input.nextInt();
+
+        System.out.println("Türkçe notunuzu giriniz");
+        tr= input.nextInt();
+
+        System.out.println("İngilizce notunuzu giriniz");
+        ing= input.nextInt();
+
+        System.out.println("Beden notunuzu giriniz");
+        bdn= input.nextInt();
+
+        System.out.println("Tarih notunuzu giriniz");
+        trh= input.nextInt();
+
+        System.out.println("Fizik notunuzu giriniz");
+        fzk= input.nextInt();
+
+        int a= mat+tr+ing+bdn+fzk+trh;
+        double sonuc=a/6.0;
+
+
+        boolean durum1= sonuc>60 ;
+        String u= durum1 ? "Geçti": "Kaldı" ;
+
+        System.out.println("Dersin Notu Ortalaması: "+sonuc);
+        System.out.println("Sınıf geçme durumu: "+u);
+
+
+
+
+
+
+
+
+    }
+}
