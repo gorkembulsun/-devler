@@ -1,0 +1,31 @@
+
+package kutu;
+import java.util.Scanner;
+
+public class java1 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+
+        int r;
+        double pi=3.14, alan,cevre;
+        System.out.println("Yarıçapı girin:");
+        r=input.nextInt();
+
+        alan= pi*r*r;
+        cevre=2*pi*r;
+
+
+        System.out.println("Daire'nin Alanı:"+alan);
+        System.out.println("Daire'nin Çevresi:"+cevre);
+
+
+
+
+
+
+
+
+
+    }
+}
