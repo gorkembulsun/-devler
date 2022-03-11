@@ -10,4 +10,4 @@ public class java1 {
         double km= (input.nextDouble()*2.20)+10;
         boolean kontrol= km<20;
         String str= (kontrol) ? "Ücret 20TL":""+km;
-        System.out.println(str);
+        System.out.println("ücret: "+str);
