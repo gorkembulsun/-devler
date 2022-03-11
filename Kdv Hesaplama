@@ -1,0 +1,25 @@
+package Giris;
+import java.util.Scanner;
+
+public class Baslangic {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+        double f,kf,sf,bf ,kdvo;
+        System.out.println("Fiyatı Giriniz:");
+        f = input.nextDouble();
+
+
+
+
+        kf = f *18/100;
+        sf = f+kf;
+        bf = f;
+        kdvo=0.18;
+        System.out.println("Kdv'siz Fiyatı:"+bf);
+        System.out.println("Kdv'li Fiyatı:"+ sf);
+        System.out.println("Kdv Fiyatı:"+kf);
+        System.out.println("Kdv oranı:"+kdvo);
+        
+    }
+}
