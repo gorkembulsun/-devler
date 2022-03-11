@@ -1,0 +1,56 @@
+
+package kutu;
+import java.util.Scanner;
+
+public class java1 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+       double armut, elma, domates, muz, patlican;
+
+       armut=2.14; elma=3.67; domates=1.11; muz=0.95; patlican=5.00;
+       double atf,etf,dtf,mtf,ptf;
+
+        System.out.println("Armut kaç kilo? :");
+        atf= input.nextDouble()*armut;
+
+        System.out.println("Elma kaç kilo? :");
+        etf= input.nextDouble()*elma;
+
+        System.out.println("Domates kaç kilo? :");
+        dtf= input.nextDouble()*domates;
+
+        System.out.println("Muz kaç kilo? :");
+        mtf= input.nextDouble()*muz;
+
+        System.out.println("Patlıcan kaç kilo? :");
+        ptf= input.nextDouble()*patlican;
+        double toplam=+atf+etf+dtf+mtf+ptf;
+
+        System.out.println("Toplam Tutar :"+toplam);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
