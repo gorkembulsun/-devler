@@ -1,0 +1,30 @@
+package Giris;
+import java.util.Scanner;
+
+public class Baslangic {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+       int a, b, alan;
+       double c,o;
+
+       System.out.println("1.kenar:");
+       a= input.nextInt();
+        System.out.println("2.kenar:");
+        b= input.nextInt();
+
+        c=Math.sqrt ((a*a) + (b*b));
+
+        double l=(a+b+c)/2;
+        double etraf=(a+b+c)/2*2;
+
+        o= a+b+c;
+
+        alan= (a*b)/2;
+
+
+        System.out.println("Alanı:"+alan+"cm");
+        System.out.println("Çevre"+o);
+        
+    }
+}
