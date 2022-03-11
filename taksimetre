@@ -1,0 +1,13 @@
+package kutu;
+import java.util.Scanner;
+
+public class java1 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+        int bas=10;
+        System.out.println("Km gir:");
+        double km= (input.nextDouble()*2.20)+10;
+        boolean kontrol= km<20;
+        String str= (kontrol) ? "Ücret 20TL":""+km;
+        System.out.println(str);
