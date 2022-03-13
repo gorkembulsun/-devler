@@ -1,0 +1,39 @@
+package Giris;
+import java.util.Scanner;
+
+public class Baslangic {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+        String ka,ks, ga,gs;
+        ga="gorkem123321"; gs="naber123321";
+
+
+        System.out.println("Kullanıcı Adını Girin:");
+        ka=input.next();
+        System.out.println("Kullanıcı Şifrenizi Girin:");
+        ks=input.next();
+
+        if (ka.equals(ga)&& ks.equals(gs)){
+            System.out.println("Giriş başarılı");
+        }
+        else if(ka.equals(ga)&& !ks.equals(gs)){
+            System.out.println("Şifreniz yanlış\nŞifreniz Yanlış yenilemek ister misiniz?\n" +
+                    "y,n");
+            String y,n;
+            String yenileme= input.next();
+            if(yenileme.equals("n")) System.out.println("Tekrar Deneyin");
+            if(yenileme.equals("y")) System.out.println("Yeni sifrenizi girin");
+            String ys;
+            ys= input.next();
+            if (ys.equals(gs)) System.out.println("Girdiğiniz şifre eskisi ile aynı");
+            else if (!ys.equals(gs)) System.out.println("Şifre başarılı bir şekilde değişti");
+            new String(gs=ys);
+
+            System.out.println("Kullanıcı adını tekrar girin");
+            ka=input.next();
+            System.out.println("Kullanıcı şifresini tekrar girin");
+            ks=input.next();
+
+            if (ka.equals(ga)&& ks.equals(gs))
+                System.out.println("Giriş başarılı");
