@@ -1,0 +1,52 @@
+package Giris;
+import java.util.Scanner;
+
+public class Baslangic {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+        int a,b,secim;
+
+        System.out.println("İlk rakamı girin");
+        a=input.nextInt();
+        System.out.println("ikinci rakamı girin");
+        b=input.nextInt();
+        System.out.println("Lütfen işlemi seçin\n1=TOPLAMA\n2=ÇIKARMA\n3=ÇARPMA\n4=BÖLME");
+        secim=input.nextInt();
+    
+        switch (secim){
+            case 1:
+                System.out.println("Toplama Sonucu:"+(a+b));
+                break;
+            case 2:
+                System.out.println("Çıkarma Sonucu:"+(a-b));
+                break;
+            case 3:
+                System.out.println("Çarpma Sonucu:"+(a*b));
+                break;
+
+            case 4:
+                if (b!=0){System.out.println("Bölme Sonucu:"+(a/b));}
+                else {
+                    System.out.println("0'a bölünemez");
+                }
+                break;
+
+            default:
+                System.out.println("Yanlış seçim yaptınız");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
