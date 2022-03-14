@@ -1,0 +1,66 @@
+import java.util.*;
+import java.io.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+
+
+        Scanner input = new Scanner(System.in);
+
+        int day,month;
+
+        System.out.println("Lütfen bir ay girin:");
+        month= input.nextInt();
+
+        System.out.println("Lütfen bir gün girin:");
+        day= input.nextInt();
+
+        if (month==3||month==4){if((month==3 && (day>=21&& day<=31))||(month==4 && (day<=20&&day>0))) System.out.println("Koç Burcusunuz");
+        }
+        if(month==4||month==5){if((month==4 && (day>=21&& day<=30))||(month==5 && (day<=21&&day>0))) System.out.println("Boğa Burcusunuz");
+        }
+        if(month==5||month==6){if((month==5 && (day>=22&& day<=31))||(month==6 && (day<=22&&day>0))) System.out.println("İkizler Burcusunuz");
+        }
+        if(month==6||month==7){if((month==6 && (day>=23&& day<=30))||(month==7 && (day<=22&&day>0))) System.out.println("Yengeç Burcusunuz");
+        }
+        if(month==7||month==8){if((month==7 && (day>=23&& day<=31))||(month==8 && (day<=22&&day>0))) System.out.println("Aslan Burcusunuz");
+        }
+        if(month==8||month==9){if((month==8 && (day>=23&& day<=31))||(month==9 && (day<=22&&day>0))) System.out.println("Başak Burcusunuz");
+        }
+        if(month==9||month==10){if((month==9 && (day>=23&& day<=30))||(month==10 && (day<=22&&day>0))) System.out.println("Terazi Burcusunuz");
+        }
+        if(month==10||month==11){if((month==10 && (day>=23&& day<=31))||(month==11 && (day<=21&&day>0))) System.out.println("Akrep Burcusunuz");
+        }
+        if(month==11||month==12){if((month==11 && (day>=22&& day<=30))||(month==12 && (day<=21&&day>0))) System.out.println("Yay Burcusunuz");
+        }
+        if(month==12||month==1){if((month==12 && (day>=22&& day<=31))||(month==1 && (day<=21&&day>0))) System.out.println("Oğlak Burcusunuz");
+        }
+        if(month==1||month==2){if((month==1 && (day>=22&& day<=31))||(month==2 && (day<=19&&day>0))) System.out.println("Kova Burcusunuz");
+        }
+        if(month==2||month==3){if((month==2 && (day>=20&& day<=29))||(month==3 && (day<=20&&day>0))) System.out.println("Kova Burcusunuz");
+        }
+        if (month<=0||month>12){
+            System.out.println("Geçersiz bir ay girdiniz");
+        }
+        if (day<=0||day>31){
+            System.out.println("Geçersiz bir gün girdiniz");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
