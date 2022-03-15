@@ -1,0 +1,51 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+
+
+        Scanner input = new Scanner(System.in);
+        int yil;
+
+        System.out.println("Lütfen bir yıl girin");
+        yil= input.nextInt();
+
+        if (yil%4==0){
+            if (yil*100%400==0)
+                if (yil%400==0);
+            System.out.println(yil+" bir artık yıldır");
+            }
+        else System.out.println(yil+" bir artık yıl değildir");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
