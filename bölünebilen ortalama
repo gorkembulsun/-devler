@@ -28,7 +28,7 @@ class Solution {
 
             if (sayac%3==0 &&sayac%4==0){
                 c+=sayac;
-                System.out.println(c);
+              
             }//if BİTİŞİ
         }//FOR BİTİŞİ
         System.out.println(c/b);
