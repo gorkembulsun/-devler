@@ -1,0 +1,35 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input= new Scanner(System.in);
+
+        int n,a=0;
+        do {
+
+            System.out.println("Lütfen bir sayı girin:");
+            n= input.nextInt();
+
+
+            if(n%2==0 && n%4==0){
+                a+=n;
+
+            }
+        }while (n %2==0 &&n>0);
+        System.out.println("Toplamı:"+a);
+
+
+
+    }
+}
+
+
+
