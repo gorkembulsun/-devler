@@ -1,0 +1,45 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input= new Scanner(System.in);
+        int i;
+        System.out.println("Lütfen bir sayı girin");
+        i=input.nextInt();
+
+       if (i>0) {
+           for (int sayac = 1; sayac <= i; sayac *= 5) {
+               if ((sayac * 5) % 5 == 0) {
+
+                   System.out.println("5'in kuvveti : "+sayac );
+               }
+           }//for bitişi
+       }//if
+
+        if (i>0){
+            for (int sayac = 1; sayac <= i; sayac *= 4){
+                if ((sayac * 4) % 4 == 0) {
+
+                    System.out.println("4'ün kuvveti: "+sayac);
+                }
+
+            }
+
+        }
+
+
+
+
+    }
+}
+
+
+
