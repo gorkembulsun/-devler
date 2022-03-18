@@ -1,0 +1,39 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input= new Scanner(System.in);
+
+
+        int n;
+
+        System.out.println("sayı gir");
+        n= input.nextInt();
+        double sonuc=0.0;
+
+        for (double i=1; i<=n; i++){
+            
+            sonuc+=(1/i);
+        }
+        System.out.println(sonuc);
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
