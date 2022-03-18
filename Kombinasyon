@@ -1,0 +1,42 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input= new Scanner(System.in);
+
+        int r=1,c,a,n=1,islem,sayac,SAYAC,C,u=1,sonuc;
+
+        System.out.println("Lütfen faktoriyel sayısını girin");
+        a= input.nextInt();
+        System.out.println("Lütfen kombinasyon sayısını girin ");
+        c=input.nextInt();
+
+        for ( sayac=1; sayac<=a; sayac++ ){
+
+            n=n*sayac;
+        }
+        for ( SAYAC=1 ;SAYAC<=c ;SAYAC++){
+            r=r*SAYAC;
+        }
+        islem=sayac-SAYAC;
+        for (int i=1; i<=islem;i++) {
+            u = u * i;
+        }
+
+        sonuc=n/(u*r);
+        System.out.println(sonuc);
+
+
+    }
+}
+
+
+
