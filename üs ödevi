@@ -1,0 +1,36 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input= new Scanner(System.in);
+// 3üssü 6 3.3.33..3.3
+        int n,k, c=1;
+
+        System.out.println("Üssü alınacak sayı:");
+        n= input.nextInt();
+        System.out.println("Üs olacak sayı: ");
+        k=input.nextInt();
+
+        for (int i=1; i<=k; i++){
+
+           c*=n;
+
+            System.out.println(c);
+        }
+
+
+
+
+    }
+}
+
+
+
