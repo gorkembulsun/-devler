@@ -1,0 +1,53 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input= new Scanner(System.in);
+
+
+
+
+        System.out.println("sayı gir");
+
+        int a=input.nextInt();
+        int u=0,r=0,c=0,b=0;
+        for (int i=0; i!=1; i++) {
+            b = a % 10;
+            a /= 10;
+        }//1 ler basamağı
+        for ( int i=0; i!=1; i++) {
+                c=a%10;
+                a/=10;
+        }//10lar basamağı
+        for ( int i=0; i!=1; i++) {
+            r=a%10;
+            a/=10;
+        }//100 ler basamağı
+        for ( int i=0; i!=1; i++) {
+            u=a%10;
+            a/=10;
+        }//1000ler basamağı
+       int sonuc;
+        sonuc=b+c+r+u;
+        System.out.println(sonuc);
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
