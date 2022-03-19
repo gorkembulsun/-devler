@@ -1,0 +1,91 @@
+package Giris;
+import java.util.Scanner;
+
+public class Baslangic {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int a,b,ebob=1;
+        System.out.println("Lütfen küçük olan sayıyı girin: ");
+        a=input.nextInt();
+        System.out.println("Lütfen büyük olan sayıyı girin: ");
+        b=input.nextInt();
+
+
+        for (int i=1; i<=a; i++) {
+            for (int j=1; j<=b;j++) {
+                if (a < b) {
+                    if (a % i == 0) {
+                        if (b % i == 0) {
+                            ebob = i;
+                        }
+                    }//İLK İF BİTİŞİ
+                }//A KÜÇÜKSE BİTİŞİ
+                else if(a>b) {
+                    if (b % j == 0) {
+                        if (a % j == 0) {
+                            ebob = j;
+                        }
+                    }//B KÜÇÜKSE İLK İF
+                }//b küçükse bitişi
+            }//B FOR BİTİŞ
+        }//A FOR BİTİŞ BİTİŞİ
+        System.out.println("EBOB: "+ebob);
+        int ekok;
+
+        if (a>b){ekok=(a*b)/ebob;
+            System.out.println("EKOK: "+ekok);}
+        else {ekok=(b*a)/ebob ;
+            System.out.println("EKOK: "+ekok);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
