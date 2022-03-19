@@ -1,0 +1,116 @@
+package Giris;
+import java.util.Scanner;
+
+public class Baslangic {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String userName, password;
+        int hak=3,balance=1500,select=0;
+
+
+        do {
+
+            System.out.print("Kullanıcı adını giriniz: ");
+            userName = input.nextLine();
+            System.out.print("Parolanızı girin: ");
+            password = input.nextLine();
+
+            if (userName.equals("patika")&&password.equals("dev")) {
+                System.out.println("Sisteme hoş geldiniz");
+                System.out.println();
+
+
+                while (select!=4) {
+                    System.out.println("Lütfen bir işlem seçin\n1=Para Yatırma\n2=Para Çekme\n3=Bakiye Sorgulama\n4=Çıkış");
+                    select = input.nextInt();
+
+
+                    switch (select) {
+                        case 1:
+                            System.out.print("Yatırmak istediğiniz tutar miktarını girin: ");
+                            int price = input.nextInt();
+                            balance += price;
+                            System.out.println("Güncel Bakiyeniz:" + balance);
+                            break;
+                            case 2:
+                                System.out.println("Lütfen çekmek istediğiniz miktarı girin:");
+                                System.out.println("Bakiyeniz:"+balance);
+                                System.out.print("Miktar:");price=input.nextInt();
+                                if (price>balance||balance<0){
+                                    System.out.println("Yetersiz Bakiye");
+                                } balance-=price;
+                                break;
+                        case 3:
+                            System.out.print("Güncel Bakiyeniz:"+balance);
+                            System.out.println();
+                            break;
+                        case 4:
+                            System.out.println("Tekrar Görüşmek üzere");
+
+                    }//S CASE BİTİş
+                } //While bitişi
+            }//SİSTEME GİRİŞ İF
+
+
+
+
+
+
+
+            if(!userName.equals("patika") || !password.equals("dev")) {
+                    hak--;
+                    System.out.println("Yanlış bilgi girdiniz ,lütfen tekrar deneyin\nKalan hakkınız: " + hak);
+            if (hak==0){
+                System.out.println("Sistem Bloke Oldu");
+            }
+            }
+
+        }while (hak!=0&&select!=4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
