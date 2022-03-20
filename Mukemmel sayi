@@ -1,0 +1,49 @@
+package BETA;
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input = new Scanner(System.in);
+
+            int n ,x=0;
+
+            System.out.println("Bir sayı girin");
+            n=input.nextInt();
+
+            for (int i=1; i<n; i++){
+                if (n%i==0){ x+=i; }
+            }
+        if(x==n){
+            System.out.println(n+": Mükemmel sayıdır"); }
+       else {System.out.println(n+": Mükemmel sayı değildir");}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
