@@ -1,27 +1,36 @@
-package Giris;
-import java.util.Scanner;
+package BETA;
 
-public class Baslangic {
-    public static void main(String[] args) {
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
         Scanner input = new Scanner(System.in);
+
         int enBüyük=0,enKücük=0;
 
 
-        System.out.print("Gireceğiniz sayı sayısını giriniz: ");
+        System.out.print("Gireceğiniz sayı sayısını girinizz: ");
         int a=input.nextInt(),b;
 
         for (int i=1; i<=a; i++) {
             System.out.print(i + ".Sayıyı girin: ");
             b = input.nextInt();
 
-            if (b > enBüyük) {
+            if (i==1){
                 enBüyük=b;
-                if (b<0){
-                    enBüyük=enKücük;
-                }
-
+                enKücük=b;
             }
+            if (b > enBüyük) { enBüyük = b; }
 
+            else if (b <enKücük){ enKücük = b;}
 
 
 
@@ -29,66 +38,10 @@ public class Baslangic {
         System.out.println("En büyük sayı: "+enBüyük);
         System.out.print("En kücük sayı: "+enKücük);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
