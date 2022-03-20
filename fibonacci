@@ -1,0 +1,63 @@
+package BETA;
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Lütfen bir sayı girin");
+        int n=input.nextInt();
+
+        int sonraki=1,onceki=0,max=10;
+        for(int i=0 ;i<n;i++){
+
+            System.out.println(onceki+" ");
+            int sum= onceki+sonraki;
+            onceki=sonraki;
+            sonraki=sum;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
