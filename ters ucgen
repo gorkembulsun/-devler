@@ -1,0 +1,50 @@
+package BETA;
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.Scanner;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Solution {
+    public static void main(String[] argh) {
+        Scanner input = new Scanner(System.in);
+
+
+
+
+        System.out.print("Lütfen satır sayısını girin: ");
+        int a=input.nextInt();
+
+        for (int i=a; i>0; i--){
+            System.out.println();
+
+            for (int k=0; k<=(a-i);k++){
+                System.out.print(" ");
+            }
+
+
+            for (int j=0; (j<2*i-1);j++){
+            System.out.print("*");}
+
+
+
+
+
+
+
+
+        }//FOR BİİTŞİ
+
+
+
+
+    }
+}
+
+
+
